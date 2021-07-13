@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import {getAccount} from './eth/network.js'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <button onClick={getAccount}> connect </button>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
